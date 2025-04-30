@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Neptunus</title>
+    <link rel="icon" type="image/jpeg?width=500" href="neptune.jpeg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Neptune_2011.jpg/1280px-Neptune_2011.jpg'); /* Ganti dengan gambar latar belakang lain jika mau */
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: rgba(17, 17, 17, 0.7);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #add8e6;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the video */
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 80%; /* Adjust width as needed */
+            max-width: 960px; /* Set a maximum width */
+        }
+
+        h1,
+        h2 {
+            color: #add8e6;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px; /* Adjust height as needed */
+            border: none;
+            border-radius: 10px; /* Make the video rounded */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow to the video */
+        }
+
+        footer {
+            background-color: rgba(17, 17, 17, 0.7);
+            padding: 10px;
+            text-align: center;
+            position: relative; /* Ensure footer stays at the bottom */
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            iframe {
+                height: 300px; /* Adjust height for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Neptunus</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Gambar.html">Gambar</a></li>
+                <li><a href="Penjelajahan.html">Penjelajahan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Video Neptunus</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3uYeaX-K68w?si=Feq85LH1NITiM7GT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Video ini menjelaskan tentang planet Neptunus</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Informasi Neptunus
+    </footer>
+</body>
+
+</html>

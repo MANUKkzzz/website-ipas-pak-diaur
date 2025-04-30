@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjelajahan Neptunus</title>
+    <link rel="icon" type="image/jpeg?width=500" href="neptune.jpeg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Neptune_2011.jpg/1280px-Neptune_2011.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: rgba(17, 17, 17, 0.7);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #add8e6;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 960px;
+        }
+
+        h1,
+        h2 {
+            color: #add8e6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for table */
+            border-radius: 10px; /* Rounded corners for the table */
+            overflow: hidden; /* Hide overflowing content for rounded corners */
+        }
+
+        th,
+        td {
+            border: none; /* Remove default borders */
+            padding: 12px; /* Increased padding */
+            text-align: left;
+            color: #fff; /* White text for table cells */
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.5); /* Darker background for header */
+            font-weight: bold;
+            text-transform: uppercase; /* Uppercase header text */
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.05); /* Slightly darker background for even rows */
+        }
+
+        footer {
+            background-color: rgba(17, 17, 17, 0.7);
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Neptunus</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Gambar.html">Gambar</a></li>
+                <li><a href="vidio.html">vidio</a></li>
+                <li><a href="Penjelajahan.html">Penjelajahan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Data Penjelajahan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Jarak dari Pusat Planet</th>
+                        <th>Lebar Radial</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Galle</td>
+                        <td>-26,000 mil (41,900 kilometer)</td>
+                        <td>9.3 mil (15 kilometer)</td>
+                    </tr>
+                    <tr>
+                        <td>Leverrier</td>
+                        <td>~33,100 mil (53,200 kilometer)</td>
+                        <td>9.3 mil (15 kilometer)</td>
+                    </tr>
+                    <tr>
+                        <td>Lassell</td>
+                        <td>-34,400 mil (55,400 kilometer)</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Arago</td>
+                        <td>-35,800 mil (57,600 kilometer)</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Adams</td>
+                        <td>-39,100 mil (62,930 kilometer)</td>
+                        <td>< 31 mil (50 kilometer)</td>
+                    </tr>
+                    <tr>
+                        <td>Liberté (Arc)</td>
+                        <td>-39,100 mil (62,900 kilometer)</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Egalité (Arc)</td>
+                        <td>~39,100 mil (62,900 kilometer)</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Fraternité (Arc)</td>
+                        <td>-39,100 mil (62,900 kilometer)</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Courage (Arc)</td>
+                        <td>-39,100 mil (62,900 kilometer)</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Informasi Neptunus
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptunus - Planet Terjauh</title>
+    <link rel="icon" type="image/jpeg?width=500" href="neptune.jpeg">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        /* style.css */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+            /* Mencegah scroll horizontal */
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* Memastikan animasi di belakang konten lain */
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px;
+            position: fixed;
+            /* Membuat header tetap di atas */
+            width: 100%;
+            z-index: 100;
+            /* Memastikan header di atas konten lain */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            /* Transisi warna saat dihover */
+        }
+
+        nav a:hover {
+            color: #0f0;
+            /* Warna hover */
+        }
+
+        #hero {
+            background-image: url("neptune-background.jpg");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 0;
+            animation: fadeIn 1s ease-in-out;
+            /* Animasi fade in */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        #hero h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            animation: slideInDown 1s ease-in-out;
+            /* Animasi slide in dari atas */
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        #hero h2 {
+            font-size: 2em;
+            animation: zoomIn 1s ease-in-out;
+            /* Animasi zoom in */
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        #tentang-neptunus,
+        #gambar,
+        #fakta-menarik,
+        #penjelajahan {
+            padding: 50px;
+            opacity: 0;
+            /* Awalnya tidak terlihat */
+            transform: translateY(20px);
+            /* Posisi awal sedikit di bawah */
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            /* Transisi untuk animasi */
+        }
+
+        #tentang-neptunus.show,
+        #gambar.show,
+        #fakta-menarik.show,
+        #penjelajahan.show {
+            opacity: 1;
+            /* Muncul */
+            transform: translateY(0);
+            /* Kembali ke posisi semula */
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+            transition: transform 0.3s ease;
+            /* Transisi untuk animasi hover */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            /* Efek zoom saat dihover */
+        }
+
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="TentangNeptunus.html">Tentang Neptunus</a></li>
+                <li><a href="Gambar.html">Gambar</a></li>
+                <li><a href="vidio.html">vidio</a></li>
+                <li><a href="Penjelajahan.html">Penjelajahan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Neptunus</h1>
+            <h2>Planet Terjauh dari Matahari</h2>
+        </section>
+        
+
+        <section id="tentang-neptunus">
+            <h2>Tentang Neptunus</h2>
+            <p>Neptunus adalah planet terjauh dari Matahari dalam sistem tata surya kita. Planet ini memiliki atmosfer yang didominasi oleh hidrogen, helium, dan metana, yang memberikan warna biru khasnya. Neptunus juga memiliki angin terkuat di tata surya, dengan kecepatan mencapai 2.100 km/jam. Neptunus memiliki 14 bulan yang diketahui, termasuk Triton, bulan terbesarnya yang memiliki aktivitas geologis yang menarik.</p>
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftekno.sindonews.com%2Fread%2F399094%2F767%2F5-fakta-planet-neptunus-dari-hujan-berlian-hingga-badai-menakutkan-1618560245&psig=AOvVaw3GSY37OL6kiJQMWbPbY8iH&ust=1740123109397000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwiY5Nbv3dGLAxXa-qACHXGnHFkQjRx6BAgAEBk" alt="Gambar Neptunus">
+        </section>
+
+        <section id="gambar">
+            <h2>Gambar Neptunus</h2>
+            <div class="gallery">
+                <img src="https://img.freepik.com/premium-photo/photo-zoom-texture-neptunus-planet-with-blue-black-color_626849-4815.jpg" alt="Gambar Neptunus 1">
+                <img src="https://awsimages.detik.net.id/community/media/visual/2020/11/18/ilustrasi-planet-uranus-1.jpeg?w=600&q=90" alt="Gambar Neptunus 2">
+                <img src="https://awsimages.detik.net.id/community/media/visual/2020/11/18/ilustrasi-planet-uranus-1.jpeg?w=600&q=90" alt="Gambar Neptunus 3">
+            </div>
+        </section>
+
+        <section id="fakta-menarik">
+            <h2>Fakta Menarik tentang Neptunus</h2>
+            <ul>
+                <li>Neptunus memiliki 14 bulan, termasuk Triton yang merupakan bulan terbesar.</li>
+                <li>Neptunus memiliki cincin tipis yang terbuat dari debu dan es.</li>
+                <li>Neptunus memiliki medan magnet yang sangat kuat dan miring.</li>
+                <li>Neptunus memiliki "bintik gelap" besar, mirip dengan Jupiter's Great Red Spot, yang merupakan badai besar di atmosfernya.</li>
+                <li>Suhu di Neptunus sangat dingin, mencapai -214 derajat Celsius.</li>
+            </ul>
+        </section>
+
+        <section id="penjelajahan">
+            <h2>Penjelajahan Neptunus</h2>
+            <p>Sejauh ini, hanya ada satu misi luar angkasa yang berhasil mencapai Neptunus, yaitu Voyager 2. Pesawat ruang angkasa ini terbang melewati Neptunus pada tanggal 25 Agustus 1989, dan memberikan banyak informasi berharga tentang planet ini, termasuk gambar-gambar yang menakjubkan dan pengukuran ilmiah yang akurat.</p>
+            <img src="voyager2.jpg" alt="Voyager 2">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Neptunus - Planet Terjauh</p>
+    </footer>
+
+    <script>
+        // script.js
+        const sections = document.querySelectorAll('#tentang-neptunus, #gambar, #fakta-menarik, #penjelajahan');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show'); // Animasi ulang saat keluar viewport
+                }
+            });
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 150,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+
+</html>
